@@ -13,8 +13,24 @@ export const useContactsStore = defineStore('contacts', {
   }),
 
   actions: {
-    async addContact (contact: IContact) {
-     this.contacts.push(contact)
+    create (contactForm: IContact) {
+     this.contacts.push(contactForm)
+    },
+
+    update (contactForm: IContact) {
+      const updatedContacts = this.contacts.map(contact => {
+        if (contact.id === contactForm.id) contact = contactForm
+
+        return contact
+      })
+
+      this.contacts = updatedContacts
+    },
+
+    delete (contactForm: IContact) {
+        const index = this.contacts.map(contact => contact.id).indexOf(contactForm.id)
+        const countRemovedItems = 1
+        this.contacts.splice(index, countRemovedItems)
     }
   }
 })
