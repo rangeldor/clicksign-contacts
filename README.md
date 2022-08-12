@@ -1,5 +1,7 @@
 # clicksign-contacts
 
+CRUD de contatos utilizando Vue 3, Composition API, Typescript, Pinia, Vuetify e Animate.css
+
 ## Project setup
 ```
 npm install
