@@ -1,5 +1,7 @@
 <template>
-  <Contact />
+  <v-app full-height>
+    <Contact />
+  </v-app>
 </template>
 
 <script setup lang="ts">
