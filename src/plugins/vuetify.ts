@@ -25,7 +25,8 @@ export default createVuetify({
           'clicksign-white': '#e1e1e1',
           'clicksign-very-light-pink': '#fff3f2',
           'clicksign-pale-grey': '#e4e7f4',
-          'clicksign-black-8': '#000000'
+          'clicksign-black-8': '#000000',
+          'clicksign-orange': '#fa7268'
         }
       }
     }
