@@ -4,25 +4,23 @@
         Criar contato
     </v-btn>
 
-    <v-dialog v-model="dialog" max-width="400">
-       <CreateUpdateContact @close-dialog="toggleDialog"/>
+    <v-dialog v-model="contactsStore.createDialog" max-width="400">
+       <CreateContact />
     </v-dialog>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import CreateUpdateContact from '@/components/CreateUpdateContact.vue'
+import CreateContact from '@/components/CreateContact.vue'
+import { useContactsStore } from '@/stores/contacts'
 
-const dialog = ref<boolean>(false)
-
+const contactsStore = useContactsStore()
 const toggleDialog = () => {
-    dialog.value = !dialog.value
+    contactsStore.createDialog = !contactsStore.createDialog
 }
 </script>
 
 <style scoped>
 .create-button {
-    margin-top: 1.5rem;
     color: #fa7268 !important;
 }
 </style>

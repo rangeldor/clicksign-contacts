@@ -1,11 +1,11 @@
 <template>
     <ContactList v-if="hasContact"/>
-    <InicialScreen v-else />
+    <InitialScreen v-else />
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import InicialScreen from '@/components/InicialScreen.vue'
+import InitialScreen from '@/components/InitialScreen.vue'
 import ContactList from '@/components/ContactList.vue'
 import { useContactsStore } from '@/stores/contacts'
 
