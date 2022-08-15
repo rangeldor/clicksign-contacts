@@ -9,7 +9,7 @@
     </v-col>
 
     <v-col cols="8">
-    pesquisa
+        <SearchButton />
     </v-col>
 </v-row>
 </template>
@@ -19,6 +19,7 @@ import { computed } from 'vue'
 import LogoIcon from '@/icons/LogoIcon.vue'
 import CreateContactButton from '@/components/CreateContactButton.vue'
 import { useContactsStore } from '@/stores/contacts'
+import SearchButton from '@/components/SearchButton.vue'
 
 const contactsStore = useContactsStore()
 const hasContact = computed(() => contactsStore.contacts.length > 0)

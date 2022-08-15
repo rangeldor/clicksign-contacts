@@ -6,6 +6,7 @@ interface IState {
   contact: IContact | Record<string, never>
   contactId: number
   createdItemId: number
+  searchedName: string
   createDialog: boolean
   updateDialog: boolean
   deleteDialog: boolean
@@ -17,6 +18,7 @@ export const useContactsStore = defineStore('contacts', {
     contact: {},
     contactId: 0,
     createdItemId: 0,
+    searchedName: '',
     createDialog: false,
     updateDialog: false,
     deleteDialog: false

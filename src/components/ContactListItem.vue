@@ -9,7 +9,7 @@
 <td>{{ contact.phone }}</td>
 <td>
     <v-btn
-        class="ma-2"
+        class="ma-1"
         color="blue-darken-3"
         size="small"
         icon="mdi-pencil-outline"
@@ -17,7 +17,7 @@
     />
 
     <v-btn
-        class="ma-2"
+        class="ma-1"
         color="red-darken-3"
         size="small"
         icon="mdi-delete"

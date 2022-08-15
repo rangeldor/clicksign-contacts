@@ -1,5 +1,5 @@
 <template>
-    <v-btn class="create-button" rounded="pill" color="clicksign-light-yellowish-green" @click.prevent="toggleDialog">
+    <v-btn class="create-button" rounded="pill" color="clicksign-light-yellowish-green" size="small" @click.prevent="toggleDialog">
         <v-icon start icon="mdi-plus"/>
         Criar contato
     </v-btn>
