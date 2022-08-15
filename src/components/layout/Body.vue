@@ -5,8 +5,8 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import InitialScreen from '@/components/InitialScreen.vue'
-import ContactList from '@/components/ContactList.vue'
+import InitialScreen from '@/components/layout/InitialScreen.vue'
+import ContactList from '@/components/contact/ContactList.vue'
 import { useContactsStore } from '@/stores/contacts'
 
 const contactsStore = useContactsStore()

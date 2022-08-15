@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import CreateContact from '@/components/CreateContact.vue'
+import CreateContact from '@/components/form/CreateContact.vue'
 import { useContactsStore } from '@/stores/contacts'
 
 const contactsStore = useContactsStore()

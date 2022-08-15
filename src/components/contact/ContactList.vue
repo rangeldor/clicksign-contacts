@@ -35,11 +35,11 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import { useContactsStore } from '@/stores/contacts'
-import UpdateContact from '@/components/UpdateContact.vue'
-import ContactListItem from '@/components/ContactListItem.vue'
-import DeleteContact from '@/components/DeleteContact.vue'
+import UpdateContact from '@/components/form/UpdateContact.vue'
+import ContactListItem from '@/components/contact/ContactListItem.vue'
+import DeleteContact from '@/components/form/DeleteContact.vue'
 
 const contactsStore = useContactsStore()
 const contactsAscendingOrdered = computed(() => { 

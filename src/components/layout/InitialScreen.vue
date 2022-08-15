@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 import BookIcon from '@/icons/BookIcon.vue'
-import CreateContactButton from '@/components/CreateContactButton.vue'
+import CreateContactButton from '@/components/button/CreateContactButton.vue'
 </script>
 
 <style lang="scss" scoped>

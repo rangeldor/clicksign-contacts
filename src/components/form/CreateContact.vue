@@ -49,8 +49,6 @@ import { useContactsStore } from '@/stores/contacts'
 import { IContact } from '@/interfaces/contacts'
 
 const contactsStore = useContactsStore()
-
-const emit = defineEmits<{(e: 'close-dialog'): void }>()
 const formRef = ref<HTMLFormElement>()
 const canSave = computed(() => form.value.name !== '')
 

@@ -17,9 +17,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import LogoIcon from '@/icons/LogoIcon.vue'
-import CreateContactButton from '@/components/CreateContactButton.vue'
+import CreateContactButton from '@/components/button/CreateContactButton.vue'
 import { useContactsStore } from '@/stores/contacts'
-import SearchButton from '@/components/SearchButton.vue'
+import SearchButton from '@/components/button/SearchButton.vue'
 
 const contactsStore = useContactsStore()
 const hasContact = computed(() => contactsStore.contacts.length > 0)
