@@ -22,14 +22,17 @@
                 <v-text-field
                     v-model="form.email"    
                     density="compact"
-                    variant="outlined"            
+                    variant="outlined"  
+                    :rules="[rules.email]"          
                 />
 
                 <label for="phone">Telefone</label>
                 <v-text-field
                     v-model="form.phone"     
                     density="compact"
-                    variant="outlined"      
+                    variant="outlined"    
+                    :rules="[rules.phone]"  
+                    hint="(11)99999-9999"                   
                 />
             </v-form>
         </v-card-text>
@@ -47,7 +50,9 @@
 import { computed, ref } from 'vue'
 import { useContactsStore } from '@/stores/contacts'
 import { IContact } from '@/interfaces/contacts'
+import { useRules } from '@/composables/useRules'
 
+const rules = useRules()
 const contactsStore = useContactsStore()
 const formRef = ref<HTMLFormElement>()
 const canSave = computed(() => form.value.name !== '')
